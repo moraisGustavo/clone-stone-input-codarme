@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    color: #20252A;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 1264px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    z-index: 2024;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+header .container nav {
+    display: flex;
+    gap: 40px;
+}
+
+header a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.btn {
+    border-radius: 90px;
+    border: 2px solid var(--Light-Quaternary, #E8E8E8);
+    background: var(--Light-Primary, #FFF);
+    display: inline-flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--Dark-Primary, #20252A);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 0 0 -20px;
+}
+
+.btn-green {
+    background-color: #42EC9A;
+    border: 0;
+}
+
+
+
+/* S-HERO */
+.s-hero {
+    width: 100%;
+    background: url('img/bg-hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 640px;
+}
+
+.s-hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.s-hero .headline {
+    width: 100%;
+    max-width: 501px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 248px;
+    margin-bottom: 24px;
+}
+
+.s-hero .headline h1 {
+    color: var(--Light-Primary, #FFF);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.s-hero .headline p {
+    color: var(--Light-Primary, #FFF);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+/* S-FRAME01 */
+.s-frame01 {
+    width: 100%;
+    height: 670px;
+}
+
+.s-frame01 .content {
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 58px;
+    width: 100%;
+    margin: 106px 0;
+}
+
+.s-frame01 .content .headline {
+    width: 338px;
+    height: 236px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.s-frame01 .content .headline h2 {
+    font-family: Noto Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.s-frame01 .content .headline span {
+    color: var(--Default-Green-Principal, #00A868) !important;
+}
+
+.s-frame01 .content .headline p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+}
