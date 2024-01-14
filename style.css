@@ -1,16 +1,14 @@
 * {
     box-sizing: border-box;
-    color: #20252A;
 }
 
 body {
+    color: #20252A;
     font-family: 'Noto Sans', sans-serif;
-
 }
 
 a {
     text-decoration: none;
-
 }
 
 button {
@@ -52,6 +50,7 @@ header .container nav {
 }
 
 header a {
+    color: #20252A;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -123,19 +122,14 @@ header a {
 .s-frame01 {
     width: 100%;
     height: 670px;
-}
-
-.s-frame01 .content {
     background: #F9F9F9;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 58px;
-    width: 100%;
-    margin: 106px 0;
 }
 
-.s-frame01 .content .headline {
+.s-frame01 .headline {
     width: 338px;
     height: 236px;
     display: flex;
@@ -145,19 +139,203 @@ header a {
     margin-bottom: 24px;
 }
 
-.s-frame01 .content .headline h2 {
+.s-frame01 .headline h2 {
     font-family: Noto Sans;
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
 }
 
-.s-frame01 .content .headline span {
+.s-frame01 .headline span {
     color: var(--Default-Green-Principal, #00A868) !important;
 }
 
-.s-frame01 .content .headline p {
+.s-frame01 .headline p {
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
+}
+
+
+/* S-FRAME 02 */
+.s-frame02 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 112px;
+    padding: 56px 0;
+}
+
+.content-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.s-frame02 .right {
+    width: 472px;
+    height: 218px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.headline-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subtitle-frame {
+    color: #00734D;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.title-frame {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.description-frame {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.links-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.left {
+    width: 456px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.links-frame a {
+    display: flex;
+    color: #00734D;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.apps-frame {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* S-FRAME 03 */
+.s-frame03 {
+    width: 100%;
+    background-color: #EFF4F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px;
+}
+
+.s-frame03 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 774px;
+    gap: 24px;
+}
+
+.s-frame03 h4 {
+    color: #20252A;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.s-frame03 h4 span {
+    color: var(--Default-Green-Principal, #00A868);
+}
+
+.s-frame03 .btns {
+    display: flex;
+    gap: 32px;
+}
+
+.s-frame03 .btns .btn {
+    display: flex;
+    padding: 16px 36px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* S-CONTACT */
+.s-contact {
+    width: 100%;
+    background: #31383F;
+    color: #FFF;
+    padding: 80px 0;
+}
+
+.s-contact .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.s-contact .content-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.s-contact .content-contact h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.s-contact .content-contact p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.s-contact .content-contact a {
+    color: #00A868;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background: #20252A;
+    padding: 80px 0px;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
