@@ -24,6 +24,36 @@ button {
     padding: 0 15px;
 }
 
+.btn {
+    border-radius: 90px;
+    border: 2px solid var(--Light-Quaternary, #E8E8E8);
+    background: var(--Light-Primary, #FFF);
+    display: inline-flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--Dark-Primary, #20252A);
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 0 0 -20px;
+}
+.btn:hover{
+    background: #a8a7a7;
+}
+
+.btn-green {
+    background-color: #42EC9A;
+    border: 0;
+}
+
+.btn-green:hover{
+    background: #00734D;
+}
+
+/* HEADER */
 header {
     top: 0;
     width: 100%;
@@ -55,28 +85,10 @@ header a {
     font-weight: 600;
     line-height: 24px;
 }
+header a:hover{
+    color: #00734D;
+} 
 
-.btn {
-    border-radius: 90px;
-    border: 2px solid var(--Light-Quaternary, #E8E8E8);
-    background: var(--Light-Primary, #FFF);
-    display: inline-flex;
-    padding: 12px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: var(--Dark-Primary, #20252A);
-    font-family: Noto Sans;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    margin: 0 0 0 -20px;
-}
-
-.btn-green {
-    background-color: #42EC9A;
-    border: 0;
-}
 
 
 
@@ -92,6 +104,7 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    animation: fadeLeft 1s forwards;
 }
 
 .s-hero .headline {
@@ -118,10 +131,12 @@ header a {
     line-height: 28px;
 }
 
+
+
+
 /* S-FRAME01 */
 .s-frame01 {
     width: 100%;
-    height: 670px;
     background: #F9F9F9;
     display: flex;
     align-items: center;
@@ -137,6 +152,7 @@ header a {
     align-items: baseline;
     gap: 10px;
     margin-bottom: 24px;
+    animation: fadeLeft 1s forwards;
 }
 
 .s-frame01 .headline h2 {
@@ -183,6 +199,7 @@ header a {
     gap: 18px;
     align-items: flex-start;
     justify-content: center;
+    animation: fadeRight 1s forwards;
 }
 
 .headline-frame {
@@ -222,6 +239,11 @@ header a {
     display: flex;
     flex-direction: column;
     gap: 18px;
+    
+}
+
+.left:focus{
+    animation: fadeLeft 1s forwards;
 }
 
 .links-frame a {
@@ -230,6 +252,10 @@ header a {
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
+}
+
+.links-frame a:hover{
+    color: #42EC9A;
 }
 
 .apps-frame {
@@ -325,6 +351,11 @@ header a {
     margin-top: 4px;
 }
 
+.s-contact .content-contact a:hover{
+    color: #42EC9A;
+}
+
+
 
 
 /* FOOTER */
@@ -338,4 +369,29 @@ footer .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+
+
+/* KEYFRAMES */
+@keyframes fadeLeft {
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    from{
+        opacity: 0;
+        transform: translate(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
